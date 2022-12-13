@@ -354,3 +354,4 @@ MigrationBackup/
 /web/html/spark
 /web/html/LICENSE
 /web/html/builds
+/web/html/assets/package-lock.json
