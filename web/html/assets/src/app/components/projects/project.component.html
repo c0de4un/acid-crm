@@ -1,0 +1,25 @@
+<div class="py-4 px-6 border rounded flex items-center flex-col mb-2">
+  <div class="mb-2 text-md">
+    Name: {{ project.name || 'N/A' }}
+  </div>
+  <div class="mb-2 text-md">
+    Status: {{ getStateLabel(project.state) }}
+  </div>
+  <button
+    class="border py-2 px-4 rounded bg-blue-400"
+    (click)="isDetailed = !isDetailed"
+  >
+    Details
+  </button>
+  <div *ngIf="isDetailed">
+    <div class="mb-2 text-md">
+      ID: #{{ project.id || 'N/A' }}
+    </div>
+    <div class="mb-2 text-md">
+      Created: {{ project.created_at || 'N/A'  }}
+    </div>
+    <div class="mb-2 text-md">
+      Closed: {{ project.closed_at || 'N/A' }}
+    </div>
+  </div>
+</div>
