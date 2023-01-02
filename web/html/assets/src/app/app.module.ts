@@ -16,6 +16,10 @@ import { AuthLayoutComponent } from './components/layouts/auth/auth.component';
 import { AuthComponent } from "./components/auth/auth.component";
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AsideComponent } from './components/aside/aside.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ContainerComponent } from './components/container/container.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     AuthComponent,
     AuthLayoutComponent,
     NotFoundComponent,
-    DashboardComponent
+    DashboardComponent,
+    AsideComponent,
+    HeaderComponent,
+    ContainerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
