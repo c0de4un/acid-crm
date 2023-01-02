@@ -1,0 +1,32 @@
+<form
+  [formGroup]="form"
+  (ngSubmit)="onSubmit()"
+>
+  <div
+  >
+    <label
+    >
+      Name
+    </label>
+    <input
+      type="text"
+      class="border w-full py-2 px-4 mb-2 rounded"
+      placeholder="Name"
+      formControlName="title"
+      acidFocus
+    >
+    <p
+      class="mb-2 text-red-600 font-medium text-white"
+      *ngIf="name.touched && name.status === 'INVALID'"
+    >
+      error
+    </p>
+  </div>
+
+  <button
+    type="submit"
+    class="py-2 px-4 mb-2 bg-green-500 text-white rounded"
+  >
+    Save
+  </button>
+</form>

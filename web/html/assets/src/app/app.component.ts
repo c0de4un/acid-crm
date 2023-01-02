@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { projects } from "./data/projects";
+import { ModalService } from "./services/modal.service";
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,9 @@ import { projects } from "./data/projects";
 export class AppComponent {
   title = 'ACID CRM';
   projects = projects;
+
+  constructor(
+    public modalService: ModalService
+  ) {
+  }
 }

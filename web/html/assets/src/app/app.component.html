@@ -1,12 +1,45 @@
-<h1 class="text-bold mb-2 text-center text-lg">{{ title }}</h1>
-
-<acid-global-error>
-</acid-global-error>
-
-<ul>
-  <li>
-    <acid-projects
+<div
+  class="w-full min-h-screen flex flex-row"
+>
+  <aside
+    class="left-panel w-64 py-4 px-10 flex flex-col"
+  >
+    Aside
+  </aside>
+  <div
+    class="right-panel flex flex-col"
+  >
+    <div
+      class="header flex flex-row"
     >
-    </acid-projects>
-  </li>
-</ul>
+      Header
+    </div>
+    <div
+      class="container flex"
+    >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<!--<h1 class="text-bold mb-2 text-center text-lg">{{ title }}</h1>-->
+
+<!--<acid-global-error>-->
+<!--</acid-global-error>-->
+
+<!--<ul>-->
+<!--  <li>-->
+<!--    <acid-projects-->
+<!--    >-->
+<!--    </acid-projects>-->
+<!--  </li>-->
+<!--</ul>-->
+
+<!--<acid-modal-->
+<!--  [title]="'Create Project'"-->
+<!--  *ngIf="modalService.isVisible$ | async"-->
+<!--&gt;-->
+<!--  <acid-create-project-->
+<!--  >-->
+<!--  </acid-create-project>-->
+<!--</acid-modal>-->
