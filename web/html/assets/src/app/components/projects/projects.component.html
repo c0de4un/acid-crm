@@ -1,5 +1,12 @@
 <h1 class="text-bold text-center mb-2 text-lg">Projects</h1>
 
+<input
+  type="text"
+  class="mb-2 border py-2 px-4 w-full"
+  placeholder="Search..."
+  [(ngModel)]="term"
+>
+
 <p
   class="text-center text-lg"
   *ngIf="isLoading"

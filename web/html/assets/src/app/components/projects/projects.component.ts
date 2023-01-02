@@ -9,6 +9,7 @@ import { Observable, tap } from "rxjs";
 })
 export class ProjectsComponent implements OnInit {
 
+  term: string = ''
   isLoading: boolean = false
   projects$: Observable<IProject[]>
 
