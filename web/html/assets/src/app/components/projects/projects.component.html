@@ -1,7 +1,14 @@
 <h1 class="text-bold text-center mb-2 text-lg">Projects</h1>
 
+<p
+  class="text-center text-lg"
+  *ngIf="isLoading"
+>
+  Loading...
+</p>
+
 <acid-project
-  *ngFor="let product of projects"
+  *ngFor="let product of projects$ | async"
   [project]="product"
 >
 </acid-project>

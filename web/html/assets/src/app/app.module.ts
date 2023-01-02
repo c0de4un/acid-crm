@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjectComponent } from "./components/projects/project.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
+import {HttpClientModule} from "@angular/common/http";
+import { GlobalErrorComponent } from './components/global-error/global-error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    GlobalErrorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
