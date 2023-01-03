@@ -12,7 +12,6 @@ import { FilterProjectPipe } from './pipes/filter-project.pipe';
 import { ModalComponent } from './components/modal/modal.component';
 import { CreateProjectComponent } from './components/projects/create-project/create-project.component';
 import { FocusDirective } from './directives/focus.directive';
-import { AuthLayoutComponent } from './components/layouts/auth/auth.component';
 import { AuthComponent } from "./components/auth/auth.component";
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -20,6 +19,9 @@ import { AsideComponent } from './components/aside/aside.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContainerComponent } from './components/container/container.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CardComponent } from './components/card/card.component';
+import { LabelComponent } from './components/form/label/label.component';
+import { InputComponent } from './components/form/input/input.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +34,15 @@ import { FooterComponent } from './components/footer/footer.component';
     CreateProjectComponent,
     FocusDirective,
     AuthComponent,
-    AuthLayoutComponent,
     NotFoundComponent,
     DashboardComponent,
     AsideComponent,
     HeaderComponent,
     ContainerComponent,
-    FooterComponent
+    FooterComponent,
+    CardComponent,
+    LabelComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
